@@ -115,8 +115,14 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.innerHTML = '<i class="ri-loader-4-line animate-spin"></i> Sending...';
             btn.disabled = true;
 
-            // Mock API Call
-            setTimeout(() => {
+            const formData = new FormData(contactForm);
+
+            // Google Form Submission Call
+            fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSe2pqYz-o_M7SOie4xRBkYKsZ7iKHpLlzX3woWsZF-8qPwp6Q/formResponse', {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            }).then(() => {
                 formStatus.classList.remove('hidden');
                 contactForm.reset();
                 btn.innerHTML = originalText;
@@ -126,7 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     formStatus.classList.add('hidden');
                 }, 5000);
-            }, 1500);
+            }).catch(error => {
+                console.error('Error submitting form:', error);
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            });
         });
     }
 
