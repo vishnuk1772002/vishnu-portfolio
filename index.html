@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu K | Social Media Marketing Professional</title>
+    <meta name="description" content="Results-driven Digital Marketer specializing in Meta Ads, content creation, and engagement strategies that turn followers into customers.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-bg-dark text-text-light font-outfit antialiased selection:bg-brand-blue selection:text-white">
+
+    <!-- Ambient Background Effects -->
+    <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+        <div class="absolute top-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-brand-blue/20 blur-[120px]"></div>
+        <div class="absolute bottom-[-20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-brand-orange/10 blur-[100px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-bg-dark/80 border-b border-white/5" id="header">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-white">
+                Vishnu<span class="text-brand-blue">.</span>K
+            </a>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-8 items-center font-jakarta text-sm font-medium">
+                <a href="#about" class="text-text-muted hover:text-white transition-colors">About</a>
+                <a href="#services" class="text-text-muted hover:text-white transition-colors">Services</a>
+                <a href="#portfolio" class="text-text-muted hover:text-white transition-colors">Work</a>
+                <a href="#experience" class="text-text-muted hover:text-white transition-colors">Experience</a>
+                <a href="#contact" class="btn-primary text-sm px-5 py-2">Let's Talk</a>
+            </nav>
+
+            <!-- Mobile Menu Toggler -->
+            <button class="md:hidden text-2xl text-white" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="ri-menu-4-line"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Dropdown -->
+        <div class="absolute top-full left-0 w-full bg-bg-dark/95 backdrop-blur-xl border-b border-white/10 hidden flex-col py-6 px-6 gap-6 shadow-2xl transition-all" id="mobile-menu">
+            <a href="#about" class="text-lg font-medium text-text-muted hover:text-white mobile-link">About Me</a>
+            <a href="#services" class="text-lg font-medium text-text-muted hover:text-white mobile-link">What I Do</a>
+            <a href="#portfolio" class="text-lg font-medium text-text-muted hover:text-white mobile-link">My Work</a>
+            <a href="#experience" class="text-lg font-medium text-text-muted hover:text-white mobile-link">Experience</a>
+            <a href="#contact" class="btn-primary text-center w-full mobile-link">Let's Talk</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-16 relative container mx-auto px-6 overflow-hidden snap-start" id="home">
+        <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-12 relative z-10">
+            <!-- Text Content -->
+            <div class="flex-1 text-center md:text-left reveal-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-badge mb-6 opacity-0 animate-[fade-in_1s_ease-out_forwards]">
+                    <span class="w-2 h-2 rounded-full bg-brand-green animate-pulse"></span>
+                    <span class="font-jakarta text-sm font-medium text-brand-green">Available for new projects</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-white mb-6 tracking-tight">
+                    I Help Businesses Generate Leads & <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-teal-400">Grow Through Social Media</span>
+                </h1>
+                <p class="text-lg md:text-xl text-text-muted font-jakarta mb-10 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                    Results-driven Digital Marketer specializing in Meta Ads, content creation, and engagement strategies that turn followers into customers.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="btn-primary flex items-center gap-2 group w-full sm:w-auto">
+                        Get Free Strategy Call
+                        <i class="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#portfolio" class="btn-secondary flex items-center gap-2 group w-full sm:w-auto">
+                        View My Work
+                        <i class="ri-eye-line text-brand-orange group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+                
+                <!-- Free Audit Teaser -->
+                <div class="mt-8 pt-6 border-t border-white/10 hidden md:block">
+                    <p class="flex items-center gap-2 text-sm text-text-muted font-jakarta">
+                        <i class="ri-flashlight-fill text-yellow-400"></i>
+                        <span class="text-white font-semibold">Limited Time:</span> Get a FREE Social Media Audit for Your Business
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Hero Graphic/Image wrapper -->
+            <div class="flex-1 w-full max-w-md relative reveal-up" style="transition-delay: 200ms;">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden glass-card p-2 relative group transform transition-transform duration-500 hover:scale-[1.02]">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-blue/20 to-transparent opacity-50 z-10 rounded-3xl mix-blend-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=1000" alt="Team collaborating on marketing strategy" class="w-full h-full object-cover rounded-2xl filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-700">
+                    
+                    <!-- Floating stats card -->
+                    <div class="absolute -bottom-6 -left-6 glass-card p-5 rounded-2xl z-20 flex items-center gap-4 shadow-2xl animate-[float_6s_ease-in-out_infinite]">
+                        <div class="w-12 h-12 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-green text-xl font-bold">
+                            <i class="ri-arrow-up-line"></i>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Top 1%</p>
+                            <p class="text-xs text-text-muted font-jakarta">Ads ROI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 relative container mx-auto px-6 border-t border-white/5" id="about">
+        <div class="max-w-4xl mx-auto reveal-up">
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <!-- Decorative element -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-blue/10 blur-[80px] rounded-full"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row gap-10 items-center">
+                    <div class="md:w-1/3 text-center md:text-left">
+                        <div class="w-32 h-32 md:w-48 md:h-48 mx-auto md:mx-0 rounded-full border-4 border-white/10 p-1 relative">
+                             <!-- Using a vibrant abstract avatar placeholder for the dark theme -->
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=400" alt="Abstract Representation" class="w-full h-full object-cover rounded-full filter grayscale-[30%]">
+                            <div class="absolute -bottom-2 -right-2 bg-brand-blue text-white text-xs px-3 py-1 rounded-full font-jakarta font-bold shadow-lg shadow-brand-blue/30">
+                                3+ Yrs Exp
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-6 text-lg font-jakarta text-text-muted">
+                        <p>
+                            <span class="text-xl text-white font-medium">I’m Vishnu K</span>, a Social Media Marketing Professional with hands-on experience in managing brands, running Meta Ads, and creating high-performing content.
+                        </p>
+                        <p>
+                            I help businesses grow their online presence, generate quality leads, and increase engagement through data-driven strategies and creative execution.
+                        </p>
+                        <p>
+                            With experience working across healthcare and business sectors, I focus on delivering <span class="text-brand-orange font-medium">measurable results</span> — not just likes and views.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 relative container mx-auto px-6 border-t border-white/5 bg-gradient-to-b from-transparent to-brand-blue/5" id="services">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal-up">
+                <span class="text-brand-orange font-jakarta font-semibold tracking-wider text-sm uppercase mb-3 block">Expertise</span>
+                <h2 class="section-title">What I Do</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 reveal-up" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-blue/20 to-brand-blue/5 flex items-center justify-center mb-6 text-brand-blue text-3xl">
+                        <i class="ri-smartphone-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Social Media Management</h3>
+                    <p class="text-text-muted font-jakarta leading-relaxed text-sm">
+                        Consistent posting, audience engagement, and growth strategies to build a strong online presence.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 reveal-up" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-orange/20 to-brand-orange/5 flex items-center justify-center mb-6 text-brand-orange text-3xl">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Meta Ads (FB & Insta)</h3>
+                    <p class="text-text-muted font-jakarta leading-relaxed text-sm">
+                        Targeted ad campaigns designed to generate leads, increase traffic, and maximize ROI.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 reveal-up" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 flex items-center justify-center mb-6 text-purple-400 text-3xl">
+                        <i class="ri-quill-pen-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Content Creation</h3>
+                    <p class="text-text-muted font-jakarta leading-relaxed text-sm">
+                        High-quality creatives, reels, and visuals designed to attract attention and drive engagement.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 reveal-up" style="transition-delay: 400ms;">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-green/20 to-brand-green/5 flex items-center justify-center mb-6 text-brand-green text-3xl">
+                        <i class="ri-line-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Lead Generation Strategy</h3>
+                    <p class="text-text-muted font-jakarta leading-relaxed text-sm">
+                        Data-driven campaigns focused on bringing real customers, not just impressions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-24 relative container mx-auto px-6 border-t border-white/5 overflow-hidden" id="results">
+        <div class="absolute left-[-20%] top-[30%] w-[500px] h-[500px] bg-brand-green/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 reveal-up">
+                <span class="text-brand-green font-jakarta font-semibold tracking-wider text-sm uppercase mb-3 block">Impact</span>
+                <h2 class="section-title text-left mb-8">Proven Results</h2>
+                <p class="text-text-muted font-jakarta mb-10 text-lg leading-relaxed">
+                    My data-driven approach ensures that every campaign and piece of content delivers a tangible return on investment. Here are some of the impacts I've secured for my clients.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue/20 flex items-center justify-center shrink-0 text-brand-blue">
+                            <i class="ri-rocket-line"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-medium text-lg">Increased social media engagement by 20%</p>
+                            <p class="text-text-muted text-sm font-jakarta mt-1">through an optimized content strategy and consistent posting rhythm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-orange/20 flex items-center justify-center shrink-0 text-brand-orange">
+                            <i class="ri-focus-2-line"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-medium text-lg">Generated high-quality leads</p>
+                            <p class="text-text-muted text-sm font-jakarta mt-1">using precision-targeted Meta Ads campaigns across various niches.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center shrink-0 text-brand-green">
+                            <i class="ri-arrow-down-circle-line"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-medium text-lg">Reduced cost-per-lead (CPL)</p>
+                            <p class="text-text-muted text-sm font-jakarta mt-1">by implementing advanced audience targeting and continuous A/B testing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center shrink-0 text-purple-400">
+                            <i class="ri-bar-chart-grouped-line"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-medium text-lg">Improved brand visibility</p>
+                            <p class="text-text-muted text-sm font-jakarta mt-1">and fostered meaningful audience interaction across multiple social platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 w-full reveal-up" style="transition-delay: 200ms;">
+                <div class="glass-card p-6 rounded-3xl relative">
+                    <!-- Decorative Mock Chart -->
+                    <div class="h-64 border-b border-l border-white/10 relative flex items-end gap-4 p-4">
+                        <!-- Bars -->
+                        <div class="w-full bg-gradient-to-t from-brand-blue/60 to-brand-blue rounded-t-lg relative group h-[30%] hover:h-[35%] transition-all duration-500 flex justify-center">
+                            <span class="absolute -top-8 text-xs font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity">Q1</span>
+                        </div>
+                        <div class="w-full bg-gradient-to-t from-brand-blue/60 to-brand-blue rounded-t-lg relative group h-[50%] hover:h-[55%] transition-all duration-500 flex justify-center">
+                            <span class="absolute -top-8 text-xs font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity">Q2</span>
+                        </div>
+                        <div class="w-full bg-gradient-to-t from-brand-orange/60 to-brand-orange rounded-t-lg relative group h-[75%] hover:h-[80%] transition-all duration-500 flex justify-center">
+                            <span class="absolute -top-8 text-xs font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity">Q3</span>
+                        </div>
+                        <div class="w-full bg-gradient-to-t from-brand-green/60 to-brand-green rounded-t-lg relative group h-[95%] hover:h-[100%] transition-all duration-500 flex justify-center">
+                            <span class="absolute -top-8 text-xs font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity">Q4</span>
+                            <div class="absolute -top-3 -right-3 w-6 h-6 bg-white text-brand-green rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(16,185,129,0.5)]">
+                                <i class="ri-star-fill text-[10px]"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Trend Line SVG Overlay -->
+                        <svg class="absolute inset-0 w-full h-full pointer-events-none" preserveAspectRatio="none" viewBox="0 0 100 100">
+                            <path d="M5,80 Q25,60 40,55 T75,25 Q85,15 95,5" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-dasharray="5 5"></path>
+                            <circle cx="95" cy="5" r="2" fill="white"></circle>
+                        </svg>
+                    </div>
+                    <div class="mt-6 flex justify-between items-center px-4">
+                        <div>
+                            <p class="text-sm text-text-muted font-jakarta">Overall Growth</p>
+                            <p class="text-3xl font-bold text-white mt-1">+140%</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-sm text-text-muted font-jakarta">Conversion Rate</p>
+                            <p class="text-3xl font-bold text-brand-green mt-1">12.5%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-24 relative container mx-auto px-6 border-t border-white/5" id="portfolio">
+        <div class="text-center mb-16 reveal-up">
+            <span class="text-brand-blue font-jakarta font-semibold tracking-wider text-sm uppercase mb-3 block">Portfolio</span>
+            <h2 class="section-title">My Work</h2>
+            <p class="text-text-muted font-jakarta max-w-2xl mx-auto mt-4">
+                Here are some of the creatives, posters, and campaign visuals I’ve designed for brands across various sectors.
+            </p>
+        </div>
+
+        <!-- Portfolio Grid (Masonry or simple grid) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <!-- Portfolio Item 1 -->
+            <div class="group relative rounded-3xl overflow-hidden aspect-square cursor-pointer reveal-up" style="transition-delay: 100ms;">
+                <div class="absolute inset-0 bg-brand-blue/20 group-hover:bg-transparent transition-colors z-10 mix-blend-overlay"></div>
+                <!-- Using Unsplash design/poster placeholders currently -->
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800" alt="Design Portfolio 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-bg-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex flex-col justify-end p-8">
+                    <p class="text-brand-orange text-sm font-bold tracking-wider mb-2">HEALTHCARE</p>
+                    <h3 class="text-2xl font-bold text-white mb-2">Medical Awareness Campaign</h3>
+                    <p class="text-sm text-gray-300 font-jakarta">Poster Design & Meta Ads Concept</p>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="group relative rounded-3xl overflow-hidden aspect-square cursor-pointer reveal-up" style="transition-delay: 200ms;">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="Design Portfolio 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 filter saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-bg-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex flex-col justify-end p-8">
+                    <p class="text-brand-blue text-sm font-bold tracking-wider mb-2">BUSINESS</p>
+                    <h3 class="text-2xl font-bold text-white mb-2">B2B Lead Generation</h3>
+                    <p class="text-sm text-gray-300 font-jakarta">Carousel Ad Design</p>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="group relative rounded-3xl overflow-hidden aspect-square cursor-pointer reveal-up" style="transition-delay: 300ms;">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800" alt="Design Portfolio 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-bg-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex flex-col justify-end p-8">
+                    <p class="text-purple-400 text-sm font-bold tracking-wider mb-2">E-COMMERCE</p>
+                    <h3 class="text-2xl font-bold text-white mb-2">Product Launch Sale</h3>
+                    <p class="text-sm text-gray-300 font-jakarta">Instagram Reel Cover & Story</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 4 -->
+            <div class="group relative rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-square lg:col-span-2 cursor-pointer reveal-up" style="transition-delay: 100ms;">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" alt="Design Portfolio 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 filter brightness-75 group-hover:brightness-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-bg-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex flex-col justify-end p-8">
+                    <p class="text-brand-green text-sm font-bold tracking-wider mb-2">CASE STUDY</p>
+                    <h3 class="text-3xl font-bold text-white mb-2">Ramla Campaign</h3>
+                    <p class="text-sm text-gray-300 font-jakarta">Full visual identity and ad suite</p>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div class="group relative rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-square cursor-pointer reveal-up" style="transition-delay: 200ms;">
+                <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=800" alt="Design Portfolio 5" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-bg-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex flex-col justify-end p-8">
+                    <p class="text-brand-orange text-sm font-bold tracking-wider mb-2">BRANDING</p>
+                    <h3 class="text-2xl font-bold text-white mb-2">Local Business Promo</h3>
+                    <p class="text-sm text-gray-300 font-jakarta">Social Media Poster</p>
+                </div>
+            </div>
+             <!-- Portfolio Item 6 -->
+            <div class="group relative rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-square cursor-pointer reveal-up" style="transition-delay: 300ms;">
+                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Design Portfolio 6" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 filter brightness-90">
+                 <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-bg-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex flex-col justify-end p-8">
+                     <p class="text-brand-blue text-sm font-bold tracking-wider mb-2">ANALYTICS</p>
+                     <h3 class="text-2xl font-bold text-white mb-2">Campaign Report</h3>
+                     <p class="text-sm text-gray-300 font-jakarta">Client Dashboard Design</p>
+                 </div>
+             </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <p class="text-text-muted text-sm font-jakarta italic">
+                * Note: Hover over images to see details. Replace these images with your actual designs!
+            </p>
+        </div>
+    </section>
+
+    <!-- Experience & Skills Split Section -->
+    <section class="py-24 relative container mx-auto px-6 border-t border-white/5 bg-gradient-to-t from-transparent to-brand-orange/5" id="experience">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <!-- Experience -->
+            <div class="reveal-up">
+                <h2 class="section-title text-left mb-10 text-4xl">Work Experience</h2>
+                <div class="relative border-l-2 border-white/10 ml-4 pl-8 space-y-12">
+                    
+                    <!-- Job 1 -->
+                    <div class="relative group">
+                        <!-- Timeline Dot -->
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-brand-orange border-4 border-bg-dark group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3 class="text-xl font-bold text-white">Digital Marketing Executive</h3>
+                            <p class="text-brand-orange text-sm font-bold tracking-wider mb-4 mt-1">AMOR BUSINESS SOLUTIONS</p>
+                            
+                            <ul class="space-y-3 font-jakarta text-text-muted text-sm">
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-orange mt-0.5"></i>
+                                    Managed social media content and comprehensive campaigns
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-orange mt-0.5"></i>
+                                    Ran targeted Facebook & Instagram Ads
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-orange mt-0.5"></i>
+                                    Performed A/B testing for better ROI and results
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-orange mt-0.5"></i>
+                                    Significantly improved engagement and lead generation metrics
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="relative group">
+                        <!-- Timeline Dot -->
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-brand-blue border-4 border-bg-dark group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3 class="text-xl font-bold text-white">Digital Marketing Executive</h3>
+                            <p class="text-brand-blue text-sm font-bold tracking-wider mb-4 mt-1">DAYA MEDICAL CENTRE</p>
+                            
+                            <ul class="space-y-3 font-jakarta text-text-muted text-sm">
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-blue mt-0.5"></i>
+                                    Handled specialized healthcare social media marketing
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-blue mt-0.5"></i>
+                                    Designed engaging posters and community awareness campaigns
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-blue mt-0.5"></i>
+                                    Increased organic audience engagement
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-check-line text-brand-blue mt-0.5"></i>
+                                    Created informative, trust-building content for patients
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="reveal-up" style="transition-delay: 200ms;">
+                <h2 class="section-title text-left mb-10 text-4xl">Skills & Tools</h2>
+                
+                <div class="flex flex-wrap gap-4">
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-global-line text-xl text-brand-blue group-hover:rotate-12 transition-transform"></i>
+                        <span class="text-white font-medium">Social Media Marketing</span>
+                    </div>
+                    
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-meta-line text-xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                        <span class="text-white font-medium">Meta Ads (FB & Insta)</span>
+                    </div>
+                    
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-pen-nib-line text-xl text-purple-400 group-hover:-rotate-12 transition-transform"></i>
+                        <span class="text-white font-medium">Canva Design</span>
+                    </div>
+                    
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-bar-chart-box-line text-xl text-brand-orange group-hover:scale-110 transition-transform"></i>
+                        <span class="text-white font-medium">Google Analytics</span>
+                    </div>
+                    
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-search-eye-line text-xl text-brand-green group-hover:scale-110 transition-transform"></i>
+                        <span class="text-white font-medium">Basic SEO</span>
+                    </div>
+                    
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-file-list-3-line text-xl text-yellow-400 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-white font-medium">Content Strategy</span>
+                    </div>
+                    
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-group-line text-xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                        <span class="text-white font-medium">Audience Targeting</span>
+                    </div>
+                    
+                    <div class="px-6 py-3 rounded-full glass-card hover:bg-white/10 transition-colors border border-white/5 flex items-center gap-3 group">
+                        <i class="ri-split-cells-horizontal text-xl text-brand-orange group-hover:scale-110 transition-transform"></i>
+                        <span class="text-white font-medium">A/B Testing</span>
+                    </div>
+                </div>
+
+                <!-- Why Choose me Card -->
+                <div class="mt-12 glass-card p-8 rounded-3xl border border-brand-orange/20 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-brand-orange/20 rounded-full blur-2xl"></div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Why Work With Me?</h3>
+                    <ul class="space-y-4 font-jakarta text-white">
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center shrink-0">
+                                <i class="ri-check-line text-brand-green text-sm"></i>
+                            </div>
+                            Results-focused approach <span class="text-text-muted text-sm">(not just posting content)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center shrink-0">
+                                <i class="ri-check-line text-brand-green text-sm"></i>
+                            </div>
+                            Experience with real client projects
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center shrink-0">
+                                <i class="ri-check-line text-brand-green text-sm"></i>
+                            </div>
+                            Strong understanding of audience behavior
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center shrink-0">
+                                <i class="ri-check-line text-brand-green text-sm"></i>
+                            </div>
+                            Creative + analytical skill combination
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center shrink-0">
+                                <i class="ri-check-line text-brand-green text-sm"></i>
+                            </div>
+                            Affordable freelance pricing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative container mx-auto px-6 border-t border-white/5" id="cta">
+        <div class="max-w-4xl mx-auto glass-card p-10 md:p-16 rounded-[3rem] text-center relative overflow-hidden reveal-up border border-brand-blue/30 shadow-[0_0_50px_rgba(59,130,246,0.1)]">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-blue/20 via-transparent to-brand-green/20"></div>
+            
+            <div class="relative z-10">
+                <!-- Free Offer Badge -->
+                <div class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 mb-8 max-w-fit mx-auto shadow-lg shadow-red-500/10 transform transition-transform hover:scale-105">
+                    <i class="ri-gift-fill text-xl text-red-500 animate-bounce"></i>
+                    <span class="font-jakarta font-bold text-white text-sm md:text-base">
+                        Get a FREE Social Media Audit for Your Business (Limited Time)
+                    </span>
+                </div>
+
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                    Let’s Grow Your Business <span class="inline-block animate-bounce">🚀</span>
+                </h2>
+                
+                <p class="text-xl text-gray-300 font-jakarta mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Looking to increase your leads, improve engagement, or scale your business online? 
+                    <strong class="text-white block mt-2 font-semibold">Let’s work together to build a strategy that delivers real results.</strong>
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="#contact" class="btn-primary w-full sm:w-auto text-lg px-8 py-4 shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+                        Get Free Social Media Audit
+                    </a>
+                    <a href="https://wa.me/919539690409" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-full sm:w-auto">
+                        <i class="ri-whatsapp-line text-2xl"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section & Footer -->
+    <section class="py-24 relative border-t border-white/5 bg-black" id="contact">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div class="reveal-up">
+                    <span class="text-brand-blue font-jakarta font-semibold tracking-wider text-sm uppercase mb-3 block">Get In Touch</span>
+                    <h2 class="section-title text-left mb-8">Contact Me</h2>
+                    <p class="text-text-muted font-jakarta mb-12 text-lg">
+                        Ready to take your digital presence to the next level? Reach out through the form or my direct contacts below.
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-6 group">
+                            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl text-white group-hover:bg-brand-blue group-hover:border-brand-blue transition-all duration-300 shadow-lg">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-text-muted font-jakarta mb-1">Location</p>
+                                <p class="text-xl font-semibold text-white">Kerala, India</p>
+                            </div>
+                        </div>
+
+                        <a href="mailto:vishnu.k1772002@gmail.com" class="flex items-center gap-6 group block w-max">
+                            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl text-white group-hover:bg-brand-orange group-hover:border-brand-orange transition-all duration-300 shadow-lg">
+                                <i class="ri-mail-send-line"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-text-muted font-jakarta mb-1">Email</p>
+                                <p class="text-xl font-semibold text-white">vishnu.k1772002@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919539690409" class="flex items-center gap-6 group block w-max">
+                            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl text-white group-hover:bg-brand-green group-hover:border-brand-green transition-all duration-300 shadow-lg">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-text-muted font-jakarta mb-1">Phone / WhatsApp</p>
+                                <p class="text-xl font-semibold text-white">+91 9539690409</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card p-8 md:p-10 rounded-3xl reveal-up" style="transition-delay: 200ms;">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-jakarta text-text-muted mb-2">Your Name</label>
+                            <input type="text" id="name" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors font-jakarta placeholder-white/20" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-jakarta text-text-muted mb-2">Email Address</label>
+                            <input type="email" id="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors font-jakarta placeholder-white/20" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-jakarta text-text-muted mb-2">Message</label>
+                            <textarea id="message" rows="4" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors font-jakarta placeholder-white/20 resize-none" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary py-4 text-center justify-center font-bold text-lg">
+                            Send Message
+                        </button>
+                        <p id="form-status" class="text-green-400 text-sm font-jakarta text-center hidden">Message sent successfully! (Mock)</p>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-24 pt-8 pb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-text-muted text-sm font-jakarta font-medium">
+                    &copy; <span id="year">2024</span> Vishnu K. All rights reserved.
+                </p>
+                <div class="flex gap-4 text-xl">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-brand-blue transition-colors"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-brand-orange transition-colors"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-brand-blue transition-colors"><i class="ri-facebook-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
